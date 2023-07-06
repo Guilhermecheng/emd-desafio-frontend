@@ -14,12 +14,9 @@ function App() {
   const mapRef = useRef();
   const modelRef = useRef();
   const overlay = useRef();
-  const caption = useRef();
   const cameraControlRef = useRef(null);
 
   const screenW = document.body.clientWidth;
-  const deg2rad = degrees => degrees * (Math.PI / 180);
-  // canvas initial position: camera={{ position: [-25, 750,110], fov: 20 }} 
 
   function modelInitPosition() {
     // let screenW = document.body.clientWidth;
@@ -41,14 +38,14 @@ function App() {
     if(goTo === "end") {
       console.log(goTo);
       mapRef.current?.flyTo({
-        center: [-43.2112527, -22.9519648],
+        center: [-43.210857, -22.951965],
         zoom: 18.6,
         duration: 3000,
         essential: true
       })
     } else if(goTo === "start") {
       mapRef.current?.flyTo({
-        center: [-43.2112527, -22.9519648],
+        center: [-43.210857, -22.951965],
         zoom: 11,
         duration: 3000,
         essential: true
@@ -404,7 +401,7 @@ function App() {
 
       </section>
 
-      <Overlay ref={overlay} caption={caption} scroll={scroll} mapRef={mapRef} />
+      <Overlay ref={overlay} />
       <div id="finish-wp" className="fixed top-0 left-0 w-full h-[100vh] bg-rio-wp bg-no-repeat bg-cover bg-center opacity-0 z-10"></div>
     </div>
   )

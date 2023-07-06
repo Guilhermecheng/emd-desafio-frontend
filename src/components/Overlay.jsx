@@ -98,7 +98,7 @@ export const Overlay = forwardRef((props, ref) => {
                 </div>
             </div>
 
-            <div id="last" className="w-full h-[200vh] flex flex-col items-center justify-center opacity-0"></div>
+            <div id="last" className="w-full h-[100vh] flex flex-col items-center justify-center opacity-0"></div>
 
             <footer className="w-full h-[100vh] flex flex-col items-center px-40 py-20 relative">
 
