@@ -5,7 +5,7 @@ export function Model({
   modelRef,
   
 }, props) {
-  const { nodes, materials } = useGLTF("/cristo.gltf");
+  const { nodes, materials } = useGLTF("cristo.gltf");
 
   return (
     <group ref={modelRef} {...props} dispose={null}>
