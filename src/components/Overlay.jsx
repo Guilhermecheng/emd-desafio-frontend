@@ -9,7 +9,7 @@ export const Overlay = forwardRef((props, ref) => {
             className="absolute top-0 left-0 w-full overflow-hidden select-none z-20"
         >
             <div id="cover" className="w-full h-[100vh] bg-cristo-wp bg-no-repeat bg-cover bg-center object-cover flex flex-col items-center justify-center shadow-2xl relative">
-                    <img src="/rio-prefeitura.png" alt="Prefeitura do Rio de Janeiro"  className="h-[100px] absolute top-20" />
+                    <img src="rio-prefeitura.png" alt="Prefeitura do Rio de Janeiro"  className="h-[100px] absolute top-20" />
 
                 <div id="page-title" className="p-4 mt-48 mx-4 text-white items-center text-center">
                     <h1 className="text-4xl md:text-6xl font-bold uppercase tracking-wide mb-8">
