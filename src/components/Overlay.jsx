@@ -108,7 +108,7 @@ export const Overlay = forwardRef((props, ref) => {
 
                 </div>
 
-                <img src="/rio-prefeitura.png" alt="Prefeitura do Rio de Janeiro"  className="h-[100px] absolute top-20" />
+                <img src="rio-prefeitura.png" alt="Prefeitura do Rio de Janeiro"  className="h-[100px] absolute top-20" />
             </footer>
         </div>
     )

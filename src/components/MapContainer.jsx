@@ -6,6 +6,7 @@ import 'mapbox-gl/dist/mapbox-gl.css';
 export function MapContainer({ mapRef }) {
     // zoom init: 11 - sem marcador
     // zoom final: 18.6
+    const MAPBOX_TOKEN="pk.eyJ1IjoiZ3VpY2hlbmciLCJhIjoiY2xqZjcxbHhqMGhxMzNldGM4MmhwN2UxayJ9.r1URtu4fAiCMB2qKgJYsZg"
 
     return (
         <Map
@@ -18,7 +19,7 @@ export function MapContainer({ mapRef }) {
             }}
             style={{width: "100vw", height: "100vh", position: "fixed", top:0, left:0 }}
             mapStyle="mapbox://styles/mapbox/light-v11"
-            mapboxAccessToken={import.meta.env.VITE_MAPBOX_TOKEN}
+            mapboxAccessToken={MAPBOX_TOKEN}
             doubleClickZoom={false}
             scrollZoom={false}
         >
