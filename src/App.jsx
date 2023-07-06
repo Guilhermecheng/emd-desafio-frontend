@@ -62,11 +62,11 @@ function App() {
         cameraControlRef.current.rotateAzimuthTo( 115 * THREE.MathUtils.DEG2RAD, true );
 
         cameraControlRef.current.setTarget(10,15,0, true);
-        cameraControlRef.current.zoom(6, true);
+        cameraControlRef.current.zoom(6.5, true);
 
       } else {
         cameraControlRef.current.rotateAzimuthTo( 90 * THREE.MathUtils.DEG2RAD, true );
-        cameraControlRef.current.setTarget(0,15,0, true);
+        cameraControlRef.current.setTarget(5,15,0, true);
         cameraControlRef.current.zoom(4, true);
       }
       // cameraControlRef.current.moveTo( 0,-300, 0, true);
@@ -91,7 +91,7 @@ function App() {
         cameraControlRef.current.setTarget(10,15,0, true);
         cameraControlRef.current.zoom(-2, true);
       } else {
-        cameraControlRef.current.setTarget(0,15,0, true);
+        cameraControlRef.current.setTarget(5,15,0, true);
         cameraControlRef.current.zoom(-2, true);
       }
     }
