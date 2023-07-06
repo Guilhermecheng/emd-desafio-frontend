@@ -62,12 +62,12 @@ function App() {
         cameraControlRef.current.rotateAzimuthTo( 115 * THREE.MathUtils.DEG2RAD, true );
 
         cameraControlRef.current.setTarget(10,15,0, true);
-        cameraControlRef.current.zoom(5, true);
+        cameraControlRef.current.zoom(6, true);
 
       } else {
         cameraControlRef.current.rotateAzimuthTo( 90 * THREE.MathUtils.DEG2RAD, true );
         cameraControlRef.current.setTarget(0,15,0, true);
-        cameraControlRef.current.zoom(3, true);
+        cameraControlRef.current.zoom(4, true);
       }
       // cameraControlRef.current.moveTo( 0,-300, 0, true);
 
@@ -351,21 +351,6 @@ function App() {
       },
       onLeaveBack: ({direction}) => {
         modelChristHead(direction);
-      }
-    })
-
-    ScrollTrigger.create({
-      trigger: "#last",
-      start: "top",
-      onEnter: () => {
-        cameraControlRef.current.setTarget(20,0,0, true);
-        cameraControlRef.current.rotateAzimuthTo( 260 * THREE.MathUtils.DEG2RAD, true );
-        cameraControlRef.current.zoom(-10, true);
-      },
-      onLeaveBack: () => {
-        cameraControlRef.current.setTarget(0,30,0, true);
-        cameraControlRef.current.rotateAzimuthTo( 90 * THREE.MathUtils.DEG2RAD, true );
-        cameraControlRef.current.zoom(10, true);
       }
     })
 

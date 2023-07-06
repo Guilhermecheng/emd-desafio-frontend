@@ -81,6 +81,7 @@ export const Overlay = forwardRef((props, ref) => {
                     </p>
                 </div>
             </div>
+
             <div id="cristo-torso" className="w-full h-[200vh] flex flex-col items-center justify-center relative">
                 <div id="torso-content" className="fixed bottom-[10%] w-[80%] p-4 bg-sky-500 rounded-md text-white opacity-0">
                     <p>
@@ -90,6 +91,7 @@ export const Overlay = forwardRef((props, ref) => {
                     </p>
                 </div>
             </div>
+            
             <div id="cristo-head" className="w-full h-[200vh] flex flex-col items-center justify-center relative">
                 <div id="head-content" className="fixed bottom-[10%] w-[80%] p-4 bg-sky-500 rounded-md text-white opacity-0">
                     <p>
@@ -98,7 +100,7 @@ export const Overlay = forwardRef((props, ref) => {
                 </div>
             </div>
 
-            <div id="last" className="w-full h-[100vh] flex flex-col items-center justify-center opacity-0"></div>
+            <div id="last" className="w-full h-[50vh] flex flex-col items-center justify-center opacity-0"></div>
 
             <footer className="w-full h-[100vh] flex flex-col items-center px-40 py-20 relative">
 
